@@ -1,0 +1,13 @@
+diff --git a/src/daemon/plugin.h b/src/daemon/plugin.h
+index 70a2232..7020262 100644
+--- a/src/daemon/plugin.h
++++ b/src/daemon/plugin.h
+@@ -39,7 +39,7 @@
+ 
+ #define PLUGIN_FLAGS_GLOBAL 0x0001
+ 
+-#define DATA_MAX_NAME_LEN 64
++#define DATA_MAX_NAME_LEN 128
+ 
+ #define DS_TYPE_COUNTER  0
+ #define DS_TYPE_GAUGE    1

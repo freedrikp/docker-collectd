@@ -58,6 +58,8 @@ WORKDIR /usr/src
 RUN git clone https://github.com/collectd/collectd.git
 WORKDIR /usr/src/collectd
 RUN git checkout $COLLECTD_VERSION
+ADD patch/increase-max-name.patch /usr/src/collectd/
+RUN git apply increase-max-name.patch
 RUN ./build.sh
 RUN ./configure \
     --prefix=/usr \
